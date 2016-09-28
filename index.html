@@ -3,30 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>My Resume</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <style>
-    body {
+    html,body {
       font-size: 25px;
-      background: #39a9f1;
-      color: #f1f1f1;
     }
     .content {
+      height: 100%;
+      width: 100%;
       font-family: 'Helvetica';
       position: absolute;
       max-width: 600px;
       max-height: 250px;
       margin: auto;
-      top: 0; left: 0; bottom: 0; right: 0;
-      text-align: center;
-      text-shadow: 2px 2px 10px #52e8da;
+      top: 0; 
+      left: 0; 
+      bottom: 0; 
+      right: 0;
+      text-align: center;s
+      text-shadow: 2px 2px 10px #D5D8D8;
       transition: text-shadow .5s ease-in-out;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      padding: 20px 10px;
     }
   </style>
 </head>
 <body>
-  <div class="content" id="sign">
-    <h1> Erik Elyager Resume</h1>
-    <h2>Wait for it, it's comming soon...</h2>
+  <div class="content">
+    <div id="sign">
+      <h1> Erik Elyager Resume</h1>
+      <h2>Wait for it, it's comming soon...</h2>
+    </div>
   </div>
+  <p class="footer">In the meantime you can visit my blog <a href="https://elyager.github.io/blog">HERE</a></p>
   <script type="text/javascript">
     var hasShadow = false;
     var $sign = document.getElementById('sign');
@@ -38,7 +50,7 @@
         $sign.style.textShadow = "none"
         hasShadow = true;
       } else {
-        $sign.style.textShadow = "2px 2px 10px #52e8da"
+        $sign.style.textShadow = "2px 2px 10px #D5D8D8"
         hasShadow = false;
       }
     }
